@@ -1,0 +1,36 @@
+header{	
+	width: 100%;
+	background: url(../img/header.jpg) no-repeat;
+	text-align: center;
+	color: white;
+	height: 300px;
+	padding-top: 30px;
+}
+
+header h1{
+	margin: 60px;
+	font-size: 3em;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.sbody{
+	display: flex;
+	flex-wrap: wrap;
+	align-content: space-between;
+}
+
+section{
+	width: 70%;
+	padding: 20px;
+}
+
+aside{
+	padding: 20px;
+	background-color: rgba(200, 200, 200, 0.5);
+	border-radius: 20px;
+	height: 200px;
+}
+
+aside li{
+	margin-top: 20px;
+}
