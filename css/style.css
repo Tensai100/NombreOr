@@ -1,5 +1,13 @@
+body{	
+	background-color: rgba(0, 160, 0, 0.2);
+    font-family: 'Merriweather',sans-serif;
+    padding: 20px;
+	margin: 0;
+}
+
 header{	
 	width: 100%;
+	min-width: 500px;
 	background: url(../img/header.jpg) no-repeat;
 	text-align: center;
 	color: white;
@@ -8,29 +16,55 @@ header{
 }
 
 header h1{
+	min-width: 500px;
 	margin: 60px;
 	font-size: 3em;
 	background-color: rgba(0, 0, 0, 0.5);
 }
 
 .sbody{
+	padding: 0;
 	display: flex;
 	flex-wrap: wrap;
-	align-content: space-between;
+	align-content: space-around;
 }
 
 section{
-	width: 70%;
+	background-color: white;
+	margin: 0;
+	max-width: 68%;
+	min-width: 600px;
 	padding: 20px;
+	border-radius: 20px;
+}
+
+section article h3{
+    font-size: 34px;
+    color: #5689a0;
+    font-weight: 500;
+    line-height: 1.5em;
+    letter-spacing: 0;
+    margin-bottom: 2%;
+    margin-top: 15px;
 }
 
 aside{
-	padding: 20px;
-	background-color: rgba(200, 200, 200, 0.5);
+	padding: 10px;
+	background-color: rgba(0, 160, 0, 0.2);
 	border-radius: 20px;
 	height: 200px;
+	margin-right: 0;
+	margin-left: 30px;
 }
 
 aside li{
 	margin-top: 20px;
+}
+
+aside h3{
+	margin-left: 20px;
+}
+
+aside li a{
+	text-decoration: none;
 }
