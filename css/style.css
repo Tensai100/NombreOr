@@ -7,7 +7,7 @@ body{
 
 header{	
 	width: 100%;
-	min-width: 500px;
+	min-width: 679px;
 	background: url(../img/header.jpg) no-repeat;
 	text-align: center;
 	color: white;
@@ -25,15 +25,15 @@ header h1{
 .sbody{
 	padding: 0;
 	display: flex;
-	flex-wrap: wrap;
-	align-content: space-around;
+	justify-content: space-around;
+	flex-direction: row-reverse;
 }
 
 section{
 	background-color: white;
 	margin: 0;
 	max-width: 68%;
-	min-width: 600px;
+	min-width: 679px;
 	padding: 20px;
 	border-radius: 20px;
 }
@@ -41,11 +41,11 @@ section{
 section article h3{
     font-size: 34px;
     color: #5689a0;
-    font-weight: 500;
-    line-height: 1.5em;
-    letter-spacing: 0;
-    margin-bottom: 2%;
     margin-top: 15px;
+}
+
+.imagePepsi{
+	width: 500px;
 }
 
 aside{
@@ -55,10 +55,12 @@ aside{
 	height: 200px;
 	margin-right: 0;
 	margin-left: 30px;
+	padding-right: 10px;
 }
 
 aside li{
 	margin-top: 20px;
+	list-style: none;
 }
 
 aside h3{
@@ -67,4 +69,39 @@ aside h3{
 
 aside li a{
 	text-decoration: none;
+	color: rgb(0, 100, 0);
+}
+
+
+
+@media screen and (max-width: 1223px){
+
+	.sbody{	
+		display: flex;	
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	aside{
+		margin: 0;
+		padding: 0;
+		padding-right: 10px;
+		padding-bottom: 10px;
+		max-width: 72%;
+		min-width: 719px;
+		height: auto;
+		margin-bottom: 40px;
+	}
+
+	aside ul{
+		display: flex;
+		justify-content: space-around;
+		padding-left: 0;
+	}
+
+	aside li{
+		margin: 0;
+		margin-left: 40px;
+	}
 }
