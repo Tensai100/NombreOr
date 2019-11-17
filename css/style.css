@@ -25,14 +25,41 @@ header h1{
 .sbody{
 	padding: 0;
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	flex-direction: row-reverse;
 }
+
+aside{
+	padding: 20px;
+	background-color: rgba(0, 160, 0, 0.2);
+	border-radius: 20px;
+	height: 200px;
+	padding-right: 10px;
+}
+
+aside ul{
+	padding-left: 0px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+
+aside li{
+	margin-top: 16px;
+	list-style: none;
+}
+
+
+aside li a{
+	text-decoration: none;
+	color: rgb(0, 100, 0);
+}
+
 
 section{
 	background-color: white;
 	margin: 0;
-	max-width: 68%;
+	max-width: 70%;
 	min-width: 679px;
 	padding: 20px;
 	border-radius: 20px;
@@ -48,31 +75,6 @@ section article h3{
 	width: 500px;
 }
 
-aside{
-	padding: 10px;
-	background-color: rgba(0, 160, 0, 0.2);
-	border-radius: 20px;
-	height: 200px;
-	margin-right: 0;
-	margin-left: 30px;
-	padding-right: 10px;
-}
-
-aside li{
-	margin-top: 20px;
-	list-style: none;
-}
-
-aside h3{
-	margin-left: 20px;
-}
-
-aside li a{
-	text-decoration: none;
-	color: rgb(0, 100, 0);
-}
-
-
 
 @media screen and (max-width: 1223px){
 
@@ -84,24 +86,24 @@ aside li a{
 	}
 
 	aside{
-		margin: 0;
-		padding: 0;
 		padding-right: 10px;
-		padding-bottom: 10px;
-		max-width: 72%;
+		width: 80%;
+		max-width: 80%;
 		min-width: 719px;
 		height: auto;
 		margin-bottom: 40px;
 	}
 
 	aside ul{
-		display: flex;
-		justify-content: space-around;
-		padding-left: 0;
+		flex-direction: row;
+		flex-wrap: nowrap;
 	}
 
 	aside li{
-		margin: 0;
-		margin-left: 40px;
+		margin-left: 16px;
+	}
+
+	section{
+		max-width: 80%;
 	}
 }
