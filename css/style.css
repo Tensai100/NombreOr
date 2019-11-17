@@ -1,23 +1,30 @@
 body{	
 	background-color: rgba(0, 160, 0, 0.2);
-    font-family: 'Merriweather',sans-serif;
+    font-family: 'Roboto', 'Merriweather',sans-serif;
+    color: rgba(4, 4, 4, 0.8);
     padding: 20px;
-	margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+a{
+	text-decoration: none;
 }
 
 header{	
-	width: 100%;
 	min-width: 679px;
 	background: url(../img/header.jpg) no-repeat;
+	background-size: cover;
+	padding: 32px;
 	text-align: center;
 	color: white;
-	height: 300px;
-	padding-top: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 40px;
 }
 
 header h1{
-	min-width: 500px;
-	margin: 60px;
 	font-size: 3em;
 	background-color: rgba(0, 0, 0, 0.1);
 }
@@ -34,7 +41,6 @@ aside{
 	background-color: rgba(0, 160, 0, 0.2);
 	border-radius: 20px;
 	height: 200px;
-	padding-right: 10px;
 }
 
 aside ul{
@@ -51,17 +57,20 @@ aside li{
 
 
 aside li a{
-	text-decoration: none;
 	color: rgb(0, 100, 0);
 }
 
 
 section{
+    font-size: 17px;
+    letter-spacing: 0.2px;
+    word-spacing: 1.5px;
+    line-height: 1.8em;
 	background-color: white;
 	margin: 0;
-	max-width: 70%;
+	max-width: 68%;
 	min-width: 679px;
-	padding: 20px;
+	padding: 32px;
 	border-radius: 20px;
 }
 
@@ -71,8 +80,12 @@ section article h3{
     margin-top: 15px;
 }
 
-.imagePepsi{
-	width: 500px;
+img{
+	min-width: 500px;
+}
+
+section p{
+	margin-top: 40px;
 }
 
 
@@ -86,7 +99,6 @@ section article h3{
 	}
 
 	aside{
-		padding-right: 10px;
 		width: 80%;
 		max-width: 80%;
 		min-width: 719px;
@@ -104,6 +116,55 @@ section article h3{
 	}
 
 	section{
-		max-width: 80%;
+		max-width: 78%;
+		min-width: 719px;
+	}
+
+	@media screen and (max-width: 800px)
+	{
+		body
+		{
+			padding: 0;
+			margin: 0;
+		}
+
+		.sbody
+		{
+			margin: 0;
+			padding: 0;
+		}
+	}
+}
+
+footer{	
+	margin: 0;
+	margin-top: 20px;
+	background-color: rgba(0, 0, 0, 0.1);
+	border-radius: 20px;
+	max-width: 73.5%;
+	min-width: 679px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@media screen and (max-width: 1223px)
+{
+	footer
+	{
+		margin: auto;
+		margin-top: 20px;
+		width: 84%;
+		max-width: 90%;
+		min-width: 783px;
+	}
+
+	@media screen and (max-width: 800px)
+	{
+		footer
+		{
+			margin-top: 20px;
+		}
 	}
 }
