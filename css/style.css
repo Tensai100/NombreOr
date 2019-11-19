@@ -9,6 +9,7 @@ body{
 
 a{
 	text-decoration: none;
+	font-style: italic;
 }
 
 header{	
@@ -37,10 +38,11 @@ header h1{
 }
 
 aside{
+	font-weight: bold;
 	padding: 20px;
 	background-color: rgba(0, 160, 0, 0.2);
 	border-radius: 20px;
-	height: 200px;
+	height: 250px;
 }
 
 aside ul{
@@ -53,11 +55,20 @@ aside ul{
 aside li{
 	margin-top: 16px;
 	list-style: none;
+	border-bottom: 1px solid rgba(0, 160, 0, 1);
+	border-left: 1px solid rgba(0, 160, 0, 1);
+	padding: 5px;
+	border-bottom-left-radius: 4px;
+}
+
+aside li:hover{
+	background-color: rgba(0, 0, 0, 0.1);
 }
 
 
 aside li a{
 	color: rgb(0, 100, 0);
+	font-style: normal;
 }
 
 
@@ -102,13 +113,16 @@ section p{
 		width: 80%;
 		max-width: 80%;
 		min-width: 719px;
-		height: auto;
+		height: 100px;
+		padding-top: 0;
+		padding-bottom: 40px;
 		margin-bottom: 40px;
 	}
 
 	aside ul{
 		flex-direction: row;
 		flex-wrap: nowrap;
+		justify-content: space-around;
 	}
 
 	aside li{
